@@ -4,6 +4,12 @@ import subprocess
 MESAGE_COLOR="\x1b[34m"
 RESERT_ALL="\x1b[0m"
 
+import os
+import subprocess
+
+MESAGE_COLOR="\x1b[34m"
+RESERT_ALL="\x1b[0m"
+
 print(f"{MESAGE_COLOR} Almost done!!")
 print(f"Inicializando un git repositorio...{RESERT_ALL}")
 
