@@ -1,0 +1,27 @@
+name: {{cookiecutter.project_Platzi}}
+channels:
+- anaconda
+- conda-force
+- defaults
+
+dependencies:
+{% if cookiecutter.packages=="All"-%}
+  - fs
+  - jupyter
+  - pathlib
+{%endif -%}
+  - pandas
+  - scipy
+  - matplotlib
+  - seaborn
+  - scikit-learn
+  - pip
+  - python = {{cookiecutter.python_version}}
+
+- pip:
+{%if cookiecutter.packages=="All" -%}
+  - pyhere
+  - numpy
+{%endif -%}
+
+ 
